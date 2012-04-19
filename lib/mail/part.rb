@@ -86,6 +86,10 @@ module Mail
     end
 
     private
+
+    def raw_source=(value)
+      @raw_source = value
+    end
     
     def get_return_values(key)
       if delivery_status_data[key].is_a?(Array)
